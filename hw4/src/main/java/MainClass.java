@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class MainClass {
 
-    /* FIRST TASK*/
+    /* FIRST TASK */
     public static void showResult(ArrayList<String> ar, ArrayList<Integer> numOfWords, ArrayList<String> unique) {
         System.out.println("Unique words:");
         for (int i = 0; i < unique.size(); i++) {
@@ -55,8 +55,8 @@ public class MainClass {
         checkDuplicates(ar);
     }
 
-    public static void main(String[] args) {
-        init1Task();
+    /* SECOND TASK */
+    public static void init2Task() {
         PhoneDirectory phoneDirectory = new PhoneDirectory();
         phoneDirectory.add("Brown", "89254545676");
         phoneDirectory.add("Gray", "89165433454");
@@ -68,5 +68,10 @@ public class MainClass {
         phoneDirectory.add("Brown", "89206576545");
         phoneDirectory.get("Brown");
         phoneDirectory.get("Black");
+    }
+
+    public static void main(String[] args) {
+        init1Task();
+        init2Task();
     }
 }
