@@ -5,8 +5,8 @@ public class MainClass {
     /* FIRST TASK */
     public static void showResult(ArrayList<String> ar, ArrayList<Integer> numOfWords, ArrayList<String> unique) {
         System.out.println("Unique words:");
-        for (int i = 0; i < unique.size(); i++) {
-            System.out.print(unique.get(i) + " ");
+        for (String s : unique) {
+            System.out.print(s + " ");
         }
         System.out.println();
         System.out.println("Quantity of words:");
@@ -19,13 +19,13 @@ public class MainClass {
     public static void checkDuplicates(ArrayList<String> ar) {
         String helper;
         int counter = 0;
-        ArrayList<Integer> arNumberOfWord = new ArrayList<Integer>();
+        ArrayList<Integer> arNumberOfWord = new ArrayList<>();
         ArrayList<String> arr = new ArrayList<>();
 
         for (int i = 0; i < ar.size(); i++) {
             helper = ar.get(i);
-            for (int j = 0; j < ar.size(); j++) {
-                if (helper.equals(ar.get(j))) {
+            for (String s : ar) {
+                if (helper.equals(s)) {
                     counter++;
                 }
             }
