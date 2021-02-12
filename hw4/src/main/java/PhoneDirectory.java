@@ -4,7 +4,7 @@ public class PhoneDirectory {
     HashMap<String, ArrayList<String>> ar;
 
     public PhoneDirectory() {
-        ar = new HashMap<String, ArrayList<String>>();
+        ar = new HashMap<>();
     }
 
     public void add(String surName, String number) {
